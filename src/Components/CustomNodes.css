@@ -1,0 +1,33 @@
+.text-updater-node {
+    height: 50px;
+    width: 150px;
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 5px;
+    background:deepskyblue;
+}
+
+.icon-updater-node{
+    height: 50px;
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 5px;
+    background:deepskyblue;
+}
+
+.inputBox{
+    border: 1px solid blue;
+    width: 120px;
+}
+
+.btn{
+    color: blue;
+}
+
+.icon-faPenToSquare{
+    color: crimson;
+}
+
+.iconBtn-faCompass{
+    color: darkslateblue;
+}
