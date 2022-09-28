@@ -7,7 +7,7 @@ import Popover from 'react-bootstrap/Popover';
 
 function PopOverNode({ data }) {
   const onClickBtn = useCallback((evt) => {
-    data.handleClick();
+    console.log(data.label)
   }, [data]);
 
   return (
@@ -15,7 +15,7 @@ function PopOverNode({ data }) {
       <Handle type="target" position={Position.Top} />
       <div>
       <OverlayTrigger
-          trigger="hover"
+          trigger='focus'
           placement='bottom'
           overlay={
             <Popover id={`popover-positioned-bottom`}>

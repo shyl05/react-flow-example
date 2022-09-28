@@ -3,11 +3,13 @@ import { Handle, Position } from 'react-flow-renderer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
+import useStore from '../../Features/store';
 
 function IconNode({ data }) {
+  const {onModelShow} = useStore();
   const onClickBtn = useCallback((evt) => {
-    data.handleClick();
-  }, [data]);
+    onModelShow();
+  }, [onModelShow]);
 
   return (
     <div className="icon-updater-node">
